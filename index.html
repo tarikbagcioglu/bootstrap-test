@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--data-bs-theme="dark" -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Kurumsal Proje 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      aside > div.list-group {
+        position: sticky;
+        top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OCTO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+            <a class="nav-link" href="#">Hakkimizda</a>
+            <a class="nav-link" href="#">Urunler</a>
+            <a class="nav-link" href="#">Iletisim</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV END -->
+    <div class="container-fluid" id="info">
+      <div class="row bg-dark text-light p-5 align-items-center">
+        <div class="col-sm-4">
+          <!-- Carousel info -->
+          <div id="octoInfo" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#octoInfo"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#octoInfo"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#octoInfo"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>firmamizin vizyonu</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, maiores!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa, optio!
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h2>firmamizin misyonu</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, maiores!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa, optio!
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h2>firmamizin sunduklari</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum, maiores!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Culpa, optio!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel info end -->
+        </div>
+        <div class="col-sm-8">
+          <!-- Carousel img -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active rounded">
+                <img
+                  src="https://picsum.photos/id/17/1200/350"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://picsum.photos/id/98/1200/350"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://picsum.photos/id/63/1200/350"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://picsum.photos/id/73/1200/350"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel img end -->
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+    <div class="container" id="product">
+      <!-- HERO info -->
+      <div
+        class="row justify-content-center text-center rounded p-5 my-5 border shadow"
+      >
+        <div class="col-sm-8 my-5">
+          <h1 class="display-6">OCTO sizi gelecege tasir</h1>
+          <p class="lead mark">Gelecek sizin ellerinizde</p>
+          <p class="lead">
+            Facilis aspernatur nesciunt earum? Esse aspernatur sit eum enim
+            ullam?
+          </p>
+          <p class="lead">
+            Quae, explicabo omnis nobis praesentium quisquam ea sequi ipsa
+            magnam?
+          </p>
+        </div>
+      </div>
+      <!-- HERO info end -->
+      <!-- Cards -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-3 shadow">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="https://picsum.photos/id/477/400/550"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Fidanlar Agaca</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <div class="d-grid">
+                    <a href="#" class="btn btn-outline-primary w-100-block"
+                      >Incele</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3">
+          <div class="card shadow">
+            <img
+              src="https://picsum.photos/id/47/400/240"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ikinci urun</h5>
+
+              <a href="#" class="btn btn-outline-primary">Incele</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3">
+          <div class="card shadow">
+            <img
+              src="https://picsum.photos/id/74/400/240"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ucuncu urun</h5>
+
+              <a href="#" class="btn btn-outline-primary">Incele</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cards end -->
+      <!-- Aside ve Content -->
+      <div class="row my-5">
+        <aside class="col-sm-3">
+          <!-- Aside info -->
+          <div class="list-group shadow">
+            <a href="#info" class="list-group-item list-group-item-action"
+              >Bilgiler</a
+            >
+            <a href="#product" class="list-group-item list-group-item-action"
+              >Urunler</a
+            >
+            <a href="#article" class="list-group-item list-group-item-action"
+              >Makaleler</a
+            >
+            <a href="#image" class="list-group-item list-group-item-action"
+              >Gorseller</a
+            >
+          </div>
+        </aside>
+        <section class="col-sm-9" id="article">
+          <article class="card shadow-sm p-3 mb-3">
+            <img
+              src="https://picsum.photos/id/63/600/240"
+              class="img-thumbnail w-100 mb-3"
+            />
+            <h2>Makale 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              aperiam quibusdam repellendus, culpa quod optio minima dolores
+              vitae fuga perferendis.
+            </p>
+            <p>
+              Aperiam amet est distinctio hic veritatis qui in ipsum tenetur nam
+              temporibus, illum laudantium velit laborum cumque ab beatae ea.
+            </p>
+            <p>
+              Incidunt pariatur recusandae beatae. Architecto, asperiores cum?
+              Hic sed fuga ipsam assumenda dicta enim quisquam, officiis
+              exercitationem eveniet maiores voluptates!
+            </p>
+          </article>
+          <article class="card shadow-sm p-3 mb-3">
+            <img
+              src="https://picsum.photos/id/54/600/240"
+              class="img-thumbnail w-100 mb-3"
+            />
+            <h2>Makale 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              aliquam eum molestiae, delectus quibusdam quaerat inventore nihil
+              ipsam illum exercitationem.
+            </p>
+            <p>
+              A, distinctio? Officiis consectetur natus, repellendus labore
+              assumenda ducimus exercitationem voluptatem ut excepturi veritatis
+              ex ipsum architecto! Repudiandae, ab quia?
+            </p>
+            <p>
+              Vel aliquid sunt reprehenderit distinctio accusantium voluptatibus
+              voluptatum? Voluptatibus fugit debitis autem earum nobis deleniti
+              eligendi qui eaque nam impedit!
+            </p>
+          </article>
+          <article class="card shadow-sm p-3 mb-3">
+            <img
+              src="https://picsum.photos/id/14/600/240"
+              class="img-thumbnail w-100 mb-3"
+            />
+            <h2>Makale 3</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+              sunt, soluta amet saepe ratione accusantium repudiandae totam
+              impedit deleniti quod?
+            </p>
+            <p>
+              Magnam eaque sed ipsum laboriosam corrupti ex unde quis delectus
+              nobis provident mollitia quas illum error, ad voluptatibus
+              possimus voluptatum.
+            </p>
+            <p>
+              Suscipit aspernatur possimus hic iste iure velit dolore nemo
+              molestias praesentium sequi minima nihil, repellat alias
+              perspiciatis earum, quaerat doloremque.
+            </p>
+          </article>
+          <article class="card shadow-sm p-3 mb-3">
+            <img
+              src="https://picsum.photos/id/94/600/240"
+              class="img-thumbnail w-100 mb-3"
+            />
+            <h2>Makale 4</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
+              reprehenderit. Placeat ullam saepe nulla rem eaque et eligendi
+              tempore omnis!
+            </p>
+            <p>
+              Vel aliquid porro omnis quos, officia accusantium quo ex ipsam,
+              doloremque aspernatur quibusdam harum eligendi quaerat maxime
+              totam dolor adipisci!
+            </p>
+            <p>
+              Ipsa quo accusamus possimus voluptate iste rem facere architecto
+              temporibus eius ipsum, quae id dolorem veritatis dicta ipsam harum
+              vero?
+            </p>
+          </article>
+          <article class="card shadow-sm p-3 mb-3">
+            <img
+              src="https://picsum.photos/id/84/600/240"
+              class="img-thumbnail w-100 mb-3"
+            />
+            <h2>Makale 5</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              nam reiciendis cumque ullam ipsum dolore voluptatum corporis
+              quaerat! Doloribus, illo!
+            </p>
+            <p>
+              Vel hic quia qui molestiae aperiam sapiente modi incidunt
+              blanditiis magni eum cum autem dolore rem, dolor, accusantium quos
+              amet.
+            </p>
+            <p>
+              A sit dignissimos odio ad voluptatem sunt sequi, ea consequuntur
+              blanditiis, eius natus magni molestiae fuga. Maxime perspiciatis
+              perferendis iure.
+            </p>
+          </article>
+        </section>
+      </div>
+      <!-- Aside ve Content end -->
+    </div>
+    <!-- container end -->
+    <!-- container -->
+    <div class="container-fluid my-5" id="image">
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/1/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/2/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/3/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/4/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/5/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/6/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/7/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/8/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/9/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/10/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/11/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/12/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/13/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/14/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://picsum.photos/id/15/600/240"
+            alt=""
+            class="img-thumbnail w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- container end-->
+    <div class="container">
+      <footer class="py-3 my-4 border-top ">
+        <div class="row ">
+        <ul class="nav col-sm-6 my-3 align-items-center justify-content-center order-1">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Hakkimizda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Urunler</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Iletisim</a>
+          </li>
+        </ul>
+        
+          <div class="col-sm my-3 d-flex align-items-center justify-content-start order-0">
+            <p class="mb-3 mb-md-0 text-body-secondary">© 2024 Octo, Inc</p>
+          </div>
+
+          <ul class="nav col-sm my-3 align-items-center justify-content-end list-unstyled d-flex order-2">
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="#"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
